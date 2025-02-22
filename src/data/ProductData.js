@@ -8,6 +8,7 @@ import Prod7 from "../assets/prod7.png";
 import Prod8 from "../assets/prod8.png";
 import Prod9 from "../assets/prod9.png";
 import Prod10 from "../assets/prod10.png";
+import { Text } from "react-native";
 
 export const ProductData = [
   {
@@ -17,7 +18,11 @@ export const ProductData = [
     rating: 3.9,
     ratingCount: "6,080",
     price: "17,299.00",
-    crossOutText: "22,299.00",
+    crossOutText: (
+      <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
+        ₹22,299.00
+      </Text>
+    ),
     deliveryBy: "Saturday, 17 June",
     image: Prod1,
   },
@@ -27,7 +32,11 @@ export const ProductData = [
     rating: 4.8,
     ratingCount: "15,380",
     price: "1,29,999.00",
-    crossOutText: "₹̶1̶3̶9̶,̶9̶9̶9̶.̶0̶0̶",
+    crossOutText: (
+      <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
+        ₹1,39,999.00
+      </Text>
+    ),
     deliveryBy: "Sunday, 18 June",
     image: Prod2,
   },
@@ -37,7 +46,11 @@ export const ProductData = [
     rating: 4.7,
     ratingCount: "9,450",
     price: "24,999.00",
-    crossOutText: "₹̶2̶9̶,̶9̶9̶9̶.̶0̶0̶",
+    crossOutText: (
+      <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
+        ₹29,999.00
+      </Text>
+    ),
     deliveryBy: "Monday, 19 June",
     image: Prod3,
   },
@@ -47,7 +60,11 @@ export const ProductData = [
     rating: 4.6,
     ratingCount: "12,345",
     price: "74,999.00",
-    crossOutText: "₹̶8̶4̶,̶9̶9̶9̶.̶0̶0̶",
+    crossOutText: (
+      <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
+        ₹84,999.00
+      </Text>
+    ),
     deliveryBy: "Tuesday, 20 June",
     image: Prod4,
   },
@@ -57,7 +74,11 @@ export const ProductData = [
     rating: 4.9,
     ratingCount: "6,780",
     price: "1,79,999.00",
-    crossOutText: "₹̶1̶9̶9̶,̶9̶9̶9̶.̶0̶0̶",
+    crossOutText: (
+      <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
+        ₹1,99,999.00
+      </Text>
+    ),
     deliveryBy: "Wednesday, 21 June",
     image: Prod5,
   },
@@ -67,7 +88,11 @@ export const ProductData = [
     rating: 4.5,
     ratingCount: "3,890",
     price: "1,34,999.00",
-    crossOutText: "₹̶1̶4̶9̶,̶9̶9̶9̶.̶0̶0̶",
+    crossOutText: (
+      <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
+        ₹1,49,999.00
+      </Text>
+    ),
     deliveryBy: "Thursday, 22 June",
     image: Prod6,
   },
@@ -77,7 +102,11 @@ export const ProductData = [
     rating: 4.3,
     ratingCount: "5,210",
     price: "34,999.00",
-    crossOutText: "₹̶3̶9̶,̶9̶9̶9̶.̶0̶0̶",
+    crossOutText: (
+      <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
+        ₹39,999.00
+      </Text>
+    ),
     deliveryBy: "Friday, 23 June",
     image: Prod7,
   },
@@ -88,29 +117,41 @@ export const ProductData = [
     rating: 4.9,
     ratingCount: "6,780",
     price: "1,79,999.00",
-    crossOutText: "₹̶1̶9̶9̶,̶9̶9̶9̶.̶0̶0̶",
+    crossOutText: (
+      <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
+        ₹1,99,999.00
+      </Text>
+    ),
     deliveryBy: "Wednesday, 21 June",
     image: Prod8,
   },
   {
     id: 9,
     productName:
-      "Buy Wireless Gaming Keyboard and Mouse Combo with 87 Key Rainbow LED Backlight Rechargeable 3800mAh Battery Mechanical Feel Anti-ghosting Ergonomic Waterproof RGB Mute Mice for Computer PC Gamer",
+      "Wireless Gaming Keyboard and Mouse Combo with 87 Key Rainbow LED Backlight Rechargeable 3800mAh Battery Mechanical Feel Anti-ghosting Ergonomic Waterproof RGB Mute Mice for Computer PC Gamer",
     rating: 4.5,
     ratingCount: "3,890",
     price: "1,34,999.00",
-    crossOutText: "₹̶1̶4̶9̶,̶9̶9̶9̶.̶0̶0̶",
+    crossOutText: (
+      <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
+        ₹1,49,999.00
+      </Text>
+    ),
     deliveryBy: "Thursday, 22 June",
     image: Prod9,
   },
   {
     id: 10,
     productName:
-      "Fossil gen 6 smartwatch review 2021: Price, design, performance and display | The Independent",
+      "Fossil Gen 6 Smartwatch - Price, Design, Performance and Display",
     rating: 4.3,
     ratingCount: "5,210",
     price: "34,999.00",
-    crossOutText: "₹̶3̶9̶,̶9̶9̶9̶.̶0̶0̶",
+    crossOutText: (
+      <Text style={{ textDecorationLine: "line-through", color: "gray" }}>
+        ₹39,999.00
+      </Text>
+    ),
     deliveryBy: "Friday, 23 June",
     image: Prod10,
   },
