@@ -1,7 +1,7 @@
-import { ScrollView, StyleSheet, Text, View, Image } from "react-native";
-import { ProductData } from "../data/ProductData";
-import PrimeLogo from "../assets/prime-logo.png";
-import { getRating } from "../utils/helpers";
+import {ScrollView, StyleSheet, Text, View, Image} from 'react-native';
+import {ProductData} from '../data/ProductData';
+import PrimeLogo from '../assets/prime-logo.png';
+import {getRating} from '../utils/helpers';
 
 const ProductsScreen = () => {
   return (
@@ -11,8 +11,8 @@ const ProductsScreen = () => {
         Price and other details may very based on products aside and color
       </Text>
 
-      {ProductData.map((item) => (
-        <View style={styles.productSection}>
+      {ProductData.map(item => (
+        <View key={item.id} style={styles.productSection}>
           <View style={styles.productImgSection}>
             <Image source={item.image} style={styles.productImg} />
           </View>
@@ -56,64 +56,64 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 18,
-    fontWeight: "bold",
-    color: "#000000",
+    fontWeight: 'bold',
+    color: '#000000',
   },
   tagLine: {
     fontSize: 11,
-    color: "gray",
+    color: 'gray',
   },
   productImg: {
-    width: "%100",
+    width: '%100',
     height: 150,
-    resizeMode: "contain",
+    resizeMode: 'contain',
   },
   productSection: {
     borderWidth: 1,
-    borderColor: "#dddddd",
-    flexDirection: "row",
+    borderColor: '#dddddd',
+    flexDirection: 'row',
     marginVertical: 15,
   },
   productImgSection: {
-    width: "40%",
-    backgroundColor: "#dddddd",
-    justifyContent: "center",
+    width: '40%',
+    backgroundColor: '#dddddd',
+    justifyContent: 'center',
   },
   productDetailSection: {
-    width: "60%",
+    width: '60%',
     padding: 10,
   },
   sponsored: {
     fontSize: 11,
-    color: "#000000",
+    color: '#000000',
   },
   productName: {
     fontSize: 12,
-    color: "#000000",
+    color: '#000000',
     lineHeight: 18,
   },
   row: {
-    flexDirection: "row",
-    alignItems: "center",
+    flexDirection: 'row',
+    alignItems: 'center',
     marginTop: 5,
   },
   rating: {
     fontSize: 10,
-    color: "#017185",
+    color: '#017185',
     marginRight: 5,
   },
   ratingCount: {
     fontSize: 10,
-    color: "#017185",
+    color: '#017185',
   },
   price: {
     fontSize: 16,
-    color: "#000000",
+    color: '#000000',
     marginRight: 5,
   },
   crossout: {
     fontSize: 10,
-    color: "gray",
+    color: 'gray',
   },
   cashback: {
     fontSize: 9,

@@ -1,10 +1,10 @@
-import { ScrollView, StyleSheet, Text, View, Image } from "react-native";
-import AmazonPay from "../assets/amazon-pay.png";
-import SendMoney from "../assets/send-money.jpg";
-import ScanQR from "../assets/scan-qr.jpeg";
-import PayBills from "../assets/pay-bills.jpeg";
-import { RecentSearchData } from "../data/RecentSearchData";
-import ServiceCard from "./ServiceCard";
+import {ScrollView, StyleSheet, Text, View, Image} from 'react-native';
+import AmazonPay from '../assets/amazon-pay.png';
+import SendMoney from '../assets/send-money.jpg';
+import ScanQR from '../assets/scan-qr.jpeg';
+import PayBills from '../assets/pay-bills.jpeg';
+import {RecentSearchData} from '../data/RecentSearchData';
+import ServiceCard from './ServiceCard';
 
 const Services = () => {
   return (
@@ -12,8 +12,7 @@ const Services = () => {
       style={styles.container}
       horizontal
       showsHorizontalScrollIndicator={false}
-      contentContainerStyle={{ paddingRight: 20 }}
-    >
+      contentContainerStyle={{paddingRight: 20}}>
       <View style={styles.serviceContainer}>
         <View style={styles.row}>
           <View style={styles.innerContainer}>
@@ -40,8 +39,8 @@ const Services = () => {
         </View>
       </View>
 
-      {RecentSearchData.map((item) => (
-        <ServiceCard item={item} />
+      {RecentSearchData.map(item => (
+        <ServiceCard key={item.id} item={item} />
       ))}
     </ScrollView>
   );
@@ -55,17 +54,17 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   serviceContainer: {
-    backgroundColor: "#fff",
+    backgroundColor: '#fff',
     borderRadius: 5,
   },
   row: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   innerContainer: {
     padding: 10,
-    alignItems: "center",
+    alignItems: 'center',
     paddingTop: 15,
   },
   imgStyle: {
@@ -75,7 +74,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 10,
-    color: "#000000",
+    color: '#000000',
     marginTop: 2,
   },
 });

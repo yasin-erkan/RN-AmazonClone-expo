@@ -1,4 +1,4 @@
 export const SCREENS = {
-  HOMESREEN: "Home",
-  PRODUCTSCREEN: "Products",
+  HOMESREEN: 'Home',
+  PRODUCTSCREEN: 'Products',
 };
